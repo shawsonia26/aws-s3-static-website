@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS S3 Static Website Project</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #4d912c;
+            color: #333;
+        }
+
+        header {
+            background-color: #f0960e;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #37475a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .services-list li {
+            margin-bottom: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ff9900;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>AWS S3 Static Website Hosting Project</h1>
+        <p>Cloud portfolio project deployed using Amazon S3</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">AWS Services</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#lessons">Lessons Learned</a>
+    </nav>
+
+    <section id="about">
+        <div class="card">
+            <h2>About the Project</h2>
+            <p>
+                This project demonstrates how to deploy a static website using Amazon S3.
+                The website contains static assets including HTML pages and images hosted
+                directly from AWS cloud infrastructure.
+            </p>
+
+            <p>
+                The purpose of this project is to practice AWS cloud deployment concepts,
+                object storage, static hosting, and technical documentation.
+            </p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="card">
+            <h2>AWS Services Used</h2>
+
+            <ul class="services-list">
+                <li>Amazon S3</li>
+                <li>IAM</li>
+                <li>Static Website Hosting</li>
+                <li>AWS Management Console</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="architecture">
+        <div class="card">
+            <h2>Architecture Diagram</h2>
+
+            <p>
+                This diagram represents the static website hosting architecture using Amazon S3.
+            </p>
+
+            <img src="images/architecture-diagram.png" width="900"  alt="Architecture Diagram">
+
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="card">
+            <h2>Project Gallery</h2>
+
+            <div class="gallery">
+                <img src="images/gray_cat.jpeg" alt="Cat Image">
+                <img src="images/tuxedo_cat.jpeg" alt="Cat Image">
+                <img src="images/black_cat.jpeg" alt="Cat Image">
+                <img src="images/siamese_cat.jpeg" alt="Cat Image">
+                <img src="images/tabby_cat.jpeg" alt="Cat Image">
+                <img src="images/titi_cat.jpeg" alt="Cat Image">
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="lessons">
+        <div class="card">
+            <h2>Lessons Learned</h2>
+
+            <ul>
+                <li>Configured Amazon S3 static website hosting</li>
+                <li>Managed public bucket permissions</li>
+                <li>Learned the difference between object and block storage</li>
+                <li>Uploaded and managed cloud-hosted files</li>
+                <li>Practiced cloud architecture documentation</li>
+            </ul>
+
+            <a class="button" href="https://aws.amazon.com/s3/">
+                Learn More About Amazon S3
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Sonia Shaw | AWS Cloud Portfolio Project</p>
+    </footer>
+
+</body>
+</html>
